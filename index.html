@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-main">
+    <div class="headers">
+        <img id="icon" src="img/icon.png" alt="">
+        <p class="header">Weather</p>
+        <p class="header">Forecast</p>
+    </div>
+    <!-- <div class="clock-container">
+        <div class="clock-content">
+            <span>Monday 15 July 2024 , "Clock : 21:33:51"</span>
+        </div>
+    </div> -->
+    <div class="weather-container">
+        <div class="search-area">
+            <input class="input-search" type="search" placeholder="Search">
+            <i id="button" class="fa-solid fa-magnifying-glass"></i>
+
+            <p id="alert">Please type something!</p>
+
+
+            <div class="weather-info">
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <div class="weather-icon"><img src="" /></div>
+                <p id="description"></p>
+                <p id="something"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <footer id="footer">
+      <p id="footer-p"> Handmade by <a id="footer-a" href="https://github.com/IlhanBal57" target="_blank">İlhan Bal</a></p> 
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
