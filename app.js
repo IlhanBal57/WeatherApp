@@ -63,7 +63,7 @@ function fetchWeather(location) {
             descriptionElement.textContent = data.weather[0].main;
             detail1.textContent = `Feels like ${data.main.feels_like}°C`
             detail2.textContent = `Humidity ${data.main.humidity}%`
-            detail3.textContent = `Humidity ${data.main.humidity}%`
+            detail3.textContent = `Wind ${data.wind.speed} KMPH%`
             changeBg(data.weather[0].main);
         })
         .catch(error => {
