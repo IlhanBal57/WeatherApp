@@ -6,7 +6,10 @@ const alert = document.querySelector("#alert");
 const locationElement = document.getElementById('location');
 const temperatureElement = document.getElementById('temperature');
 const descriptionElement = document.getElementById('description');
-const somethingElement = document.getElementById('something');
+const detail1 = document.getElementById('detail1');
+const detail2 = document.getElementById('detail2');
+const detail3 = document.getElementById('detail3');
+const line = document.getElementById('line');
 const locationIcon = document.querySelector('.weather-icon');
 const iconurl = document.querySelector('.iconurl')
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
@@ -58,6 +61,9 @@ function fetchWeather(location) {
             locationIcon.innerHTML = `<img src="icons/${icon}.png">`
             temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
             descriptionElement.textContent = data.weather[0].main;
+            detail1.textContent = `Feels like ${data.main.feels_like}°C`
+            detail2.textContent = `Humidity ${data.main.humidity}%`
+            detail3.textContent = `Humidity ${data.main.humidity}%`
             changeBg(data.weather[0].main);
         })
         .catch(error => {
