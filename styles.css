@@ -38,19 +38,6 @@ body {
     transform: scale(1.1);
 }
 
-.clock-container {
-    display: flex;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: none;
-    border-radius: 30rem;
-    padding: 10px;
-    background-color: #262e3f;
-    color: white;
-}
-
 .weather-container {
     display: flex;
     flex-direction: column;
@@ -185,5 +172,8 @@ body {
   #alert{
      padding: 1px;
      font-size: 10px;
+  }
+  .weather-container .search-area .input-search {
+    width: 70%;
   }
 }
