@@ -1,4 +1,7 @@
-Live Link : https://ilhanbal57.github.io/WeatherApp/
+Web link
+https://ilhanbal57.github.io/WeatherApp/
+
+
 I made a current weather application using the OpenWeatherMap API.
 You can learn the weather of any country, city, or district with a single click. If you search without typing anything, you will receive a warning message. The background and images in the description section change dynamically according to the weather. The page transitions are set to be very smooth.
 
